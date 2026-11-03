@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yousuf-hozaifa.github.io/sitemap.xml
