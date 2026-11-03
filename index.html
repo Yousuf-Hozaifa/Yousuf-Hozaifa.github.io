@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Md. Yousuf Hozaifa | AI Engineer and Researcher</title>
+<meta name="description" content="Portfolio of Md. Yousuf Hozaifa: AI engineer and research assistant at AMIR Lab. RAG, LLM security, federated unlearning and production ML.">
+<meta property="og:title" content="Md. Yousuf Hozaifa | AI Engineer and Researcher">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0e17;--bg2:#101726;--tx:#e8ecf4;--mut:#93a0b8;--ln:#222c42;--a:#4fd1c5;--b:#8b7cf6;--c:#f4a261;--r:14px}
+@media (prefers-color-scheme:light){:root{--bg:#f5f7fb;--bg2:#fff;--tx:#141a2a;--mut:#56627a;--ln:#d9e0ee;--a:#0e8f84;--b:#5b49d6;--c:#c4661a}}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{background:var(--bg);color:var(--tx);font:400 17px/1.65 "DM Sans",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3,h4{font-family:"Bricolage Grotesque","DM Sans",sans-serif;line-height:1.12;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--a);outline-offset:3px}
+.aurora{position:fixed;inset:0;z-index:-1;overflow:hidden;opacity:.55}
+.aurora i{position:absolute;width:55vw;height:55vw;border-radius:50%;filter:blur(90px);animation:dr 22s ease-in-out infinite alternate}
+.aurora i:nth-child(1){background:var(--a);left:-15vw;top:-20vw;opacity:.35}
+.aurora i:nth-child(2){background:var(--b);right:-20vw;top:10vh;opacity:.35;animation-delay:-8s}
+.aurora i:nth-child(3){background:var(--c);left:25vw;bottom:-35vw;opacity:.18;animation-delay:-14s}
+@keyframes dr{to{transform:translate(8vw,6vw) scale(1.15)}}
+@media (prefers-reduced-motion:reduce){.aurora i{animation:none}html{scroll-behavior:auto}}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;align-items:center;gap:22px;padding:14px max(20px,5vw);backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 70%,transparent);border-bottom:1px solid var(--ln)}
+nav .logo{font:800 20px "Bricolage Grotesque";text-decoration:none;margin-right:auto}
+nav a.l{font-size:14px;color:var(--mut);text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
+nav a.l:hover,nav a.l.on{color:var(--tx);border-color:var(--a)}
+.btn{display:inline-block;padding:11px 20px;border-radius:99px;font-weight:700;font-size:15px;text-decoration:none;border:1px solid var(--ln);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.p{background:var(--a);color:#04201d;border-color:var(--a)}
+@media (max-width:820px){nav a.l{display:none}}
+section{padding:96px max(20px,5vw) 24px;max-width:1180px;margin:0 auto}
+#home{min-height:100vh;display:grid;grid-template-columns:1.25fr 1fr;gap:48px;align-items:center;padding-top:120px}
+.kick{color:var(--a);font-weight:700;font-size:15px;margin-bottom:14px}
+h1{font-size:clamp(40px,6.4vw,76px);font-weight:800}
+h1 span{background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{margin:22px 0 28px;color:var(--mut);max-width:56ch}
+.role{font:500 20px "Bricolage Grotesque";margin-top:14px;min-height:30px}
+.role b{color:var(--c);font-weight:500}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.pic{position:relative;justify-self:center;width:min(100%,380px)}
+.pic:before{content:"";position:absolute;inset:-14px;border-radius:30px;background:linear-gradient(140deg,var(--a),var(--b));opacity:.55;filter:blur(24px)}
+.pic img{position:relative;display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top;border-radius:26px;border:1px solid var(--ln)}
+.stat{position:absolute;left:-18px;bottom:26px;background:var(--bg2);border:1px solid var(--ln);border-radius:var(--r);padding:10px 16px;font-size:14px;box-shadow:0 12px 30px #0006}
+.stat b{display:block;font:700 20px "Bricolage Grotesque";color:var(--a)}
+.mq{overflow:hidden;border-block:1px solid var(--ln);margin:30px 0 0;white-space:nowrap;padding:14px 0;color:var(--mut);font:500 18px "Bricolage Grotesque"}
+.mq div{display:inline-block;animation:mq 30s linear infinite}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.mq div{animation:none}}
+h2{font-size:clamp(30px,4.4vw,46px);margin-bottom:10px}
+.sub{color:var(--mut);margin-bottom:34px;max-width:60ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.card{background:var(--bg2);border:1px solid var(--ln);border-radius:var(--r);padding:24px;transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--a);transform:translateY(-3px)}
+.card h3{font-size:21px;margin-bottom:6px}
+.meta{color:var(--mut);font-size:14px;margin-bottom:12px}
+.card p,.card li{font-size:15.5px;color:var(--mut)}
+.card ul{padding-left:18px;display:grid;gap:6px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.tags span{font-size:12.5px;padding:3px 10px;border-radius:99px;border:1px solid var(--ln);color:var(--tx)}
+.links{margin-top:16px;display:flex;flex-wrap:wrap;gap:10px}.links a,.links span{font-size:14px;font-weight:700;padding:6px 14px;border-radius:99px;border:1px solid var(--ln);text-decoration:none}.links span{color:var(--mut);border-style:dashed;font-weight:500}.links a:hover{border-color:var(--a)}.tm{font-size:13.5px;font-weight:700;color:var(--c);margin-bottom:8px}
+.links a{color:var(--a)}
+.pill{display:inline-block;font-size:12.5px;font-weight:700;padding:3px 11px;border-radius:99px;margin-bottom:12px;background:color-mix(in srgb,var(--b) 22%,transparent);color:var(--tx)}
+.pill.act{background:color-mix(in srgb,var(--c) 25%,transparent)}
+.filt{display:flex;gap:8px;margin-bottom:22px;flex-wrap:wrap}
+.filt button{font:inherit;font-size:14px;font-weight:700;cursor:pointer;padding:8px 16px;border-radius:99px;border:1px solid var(--ln);background:none;color:var(--mut)}
+.filt button.on{background:var(--tx);color:var(--bg);border-color:var(--tx)}
+.tl{border-left:2px solid var(--ln);padding-left:26px;display:grid;gap:22px}
+.tl .card{position:relative}
+.tl .card:before{content:"";position:absolute;left:-35px;top:30px;width:12px;height:12px;border-radius:50%;background:var(--a);box-shadow:0 0 0 4px var(--bg)}
+.now{float:right;font-size:12px;font-weight:700;color:var(--a);border:1px solid var(--a);border-radius:99px;padding:2px 10px}
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.sk div{border:1px solid var(--ln);border-radius:var(--r);padding:18px;background:var(--bg2)}
+.sk h4{font-size:16px;color:var(--a);margin-bottom:6px}
+.sk p{font-size:15px;color:var(--mut)}
+.contact{text-align:center;padding-bottom:80px}
+.contact .cta{justify-content:center;margin-top:24px}
+.contact .sub{margin-inline:auto}
+footer{text-align:center;color:var(--mut);font-size:14px;padding:26px;border-top:1px solid var(--ln)}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+@media (max-width:820px){#home{grid-template-columns:1fr;text-align:left}.pic{order:-1;width:min(70%,300px)}.stat{left:auto;right:-8px}}
+</style>
+</head>
+<body>
+<div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+<nav>
+<a class="logo" href="#home">Hozaifa.</a>
+<a class="l" href="#home">Home</a><a class="l" href="#education">Education</a><a class="l" href="#projects">Projects</a><a class="l" href="#research">Research</a><a class="l" href="#experience">Experience</a><a class="l" href="#skills">Skills</a><a class="l" href="#contact">Contact</a>
+<a class="btn p" href="assets/resume.pdf" target="_blank" rel="noopener">Download CV</a>
+</nav>
+
+<section id="home">
+<div>
+<p class="kick">AI Engineer · Researcher · AMIR Lab</p>
+<h1>Md. Yousuf <span>Hozaifa</span></h1>
+<p class="role">Working on <b id="typed">LLM security</b></p>
+<p class="lead">I'm a research assistant at AMIR Lab and a Computer Science and Engineering graduate of East West University. I build secure generative AI pipelines and federated learning systems in PyTorch, and I care about models that stay fast, private and explainable once they leave the notebook.</p>
+<div class="cta"><a class="btn p" href="#projects">View projects</a><a class="btn" href="assets/resume.pdf" target="_blank" rel="noopener">Download CV</a><a class="btn" href="#contact">Get in touch</a></div>
+</div>
+<div class="pic">
+<img src="assets/portrait.png" alt="Portrait of Md. Yousuf Hozaifa" width="760" height="950">
+<div class="stat"><b>2 papers</b>submitted to ICCIT 2026</div>
+</div>
+</section>
+<div class="mq" aria-hidden="true"><div id="mq"></div></div>
+
+<section id="education" class="rv">
+<h2>Education</h2>
+<p class="sub">From civil engineering to computer science, chosen to work on machine learning.</p>
+<div class="tl">
+<div class="card"><span class="now">Graduated</span><h3>B.Sc. in Computer Science and Engineering</h3><p class="meta">East West University, Dhaka · Feb 2022 to Mar 2026</p><p>Focused on machine learning, algorithms and networks, with research in LLM security, federated learning and explainable AI.</p></div>
+<div class="card"><h3>B.Sc. in Civil Engineering</h3><p class="meta">Gopalganj Science and Technology University · Mar 2019 to Dec 2021</p><p>Transferred to East West University to pursue research interests in machine learning and computer science.</p></div>
+</div>
+</section>
+
+<section id="projects" class="rv">
+<h2>Projects</h2>
+<p class="sub">Working systems with code to read and, where available, a live demo to try.</p>
+<div class="grid" id="pg"></div>
+</section>
+
+<section id="research" class="rv">
+<h2>Research</h2>
+<p class="sub">Papers and manuscripts from my lab work, machine learning meets privacy, security and interpretability.</p>
+<div class="filt" id="rf"><button class="on" data-f="all">All</button><button data-f="sub">Submitted</button><button data-f="act">Active</button></div>
+<div class="grid" id="rg"></div>
+</section>
+
+<section id="experience" class="rv">
+<h2>Experience</h2>
+<p class="sub">Research, teaching and tutoring.</p>
+<div class="tl">
+<div class="card"><span class="now">Now</span><h3>Research Assistant, AMIR Lab</h3><p class="meta">Dhaka · Feb 2026 to present · NLP and Computational Linguistics</p>
+<ul><li>Design performance-optimized models in PyTorch and TensorFlow for generative AI, LLMs and explainable AI.</li><li>Run rigorous experiments on large datasets to test new research hypotheses.</li><li>Co-author papers and conference presentations with senior researchers.</li></ul></div>
+<div class="card"><h3>Undergraduate Teaching Assistant, East West University</h3><p class="meta">Dhaka · Jun to Sep 2025 · Algorithms, Data Communications and Networking</p>
+<ul><li>Ran labs and evaluated assignments on algorithmic problems.</li><li>Mentored students in AI, machine learning, graph theory, dynamic programming and network protocols.</li></ul></div>
+<div class="card"><h3>Mathematics Teacher and Examiner, Udvash</h3><p class="meta">Dhaka · Dec 2019 to May 2022</p>
+<ul><li>Taught Class 12 mathematics through interactive sessions.</li><li>Graded engineering admission model tests and gave written feedback.</li></ul></div>
+</div>
+</section>
+
+<section id="skills" class="rv">
+<h2>Skills</h2>
+<p class="sub">Tools I use in my projects and research.</p>
+<div class="sk" id="sg"></div>
+</section>
+
+<section id="contact" class="contact rv">
+<h2>Let's work together</h2>
+<p class="sub">Open to research collaboration, graduate opportunities and AI engineering roles. Based in Dhaka, Bangladesh.</p>
+<p><a href="mailto:mdyousufhozaifa@gmail.com" style="font:700 22px 'Bricolage Grotesque';color:var(--a)">mdyousufhozaifa@gmail.com</a></p>
+<div class="cta"><button class="btn" id="cp">Copy email</button><a class="btn" href="https://www.linkedin.com/in/yousuf-hozaifa/" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/Yousuf-Hozaifa" target="_blank" rel="noopener">GitHub</a></div>
+</section>
+<footer>© 2026 Md. Yousuf Hozaifa · Dhaka, Bangladesh</footer>
+
+<script>
+const R=[
+{k:"sub",t:"Fed-MU: Modality-Preserving Federated Unlearning for Multimodal Medical AI",s:"Submitted to ICCIT 2026",tm:"Started: add month/year · Submitted 2026",d:"A federated unlearning framework that removes patient-specific knowledge from multimodal medical models while keeping image-text alignment, without full retraining. Studies privacy-utility trade-offs on heterogeneous clients and uses XAI to read representation shifts.",g:["PyTorch","Federated Learning","Medical AI","XAI"],c:"https://github.com/Yousuf-Hozaifa/fedmu-implementation",l:""},
+{k:"sub",t:"Tool Use Across Scale: Do Large-Model Tool-Calling Strategies Transfer to Small Models?",s:"Submitted to ICCIT 2026",tm:"Started: add month/year · Submitted 2026",d:"An evaluation framework for 1B to 3B parameter models on API-Bank. On Llama-3.2 and Qwen2.5, retrieval-based tool filtering mainly improves token efficiency and tool-calling reliability, not raw tool-selection accuracy.",g:["LLMs","Tool Calling","Small Language Models","API-Bank"],c:"",l:""},
+{k:"act",t:"LEAD: Latent-Entropic Adversarial Defense for LLMs",s:"Active research · manuscript in preparation",tm:"Started: add month/year · Ongoing",d:"A dual-stage defense against gradient-based attacks (GCG) and fluent jailbreaks (PAIR, AutoDAN). A DistilGPT2 entropy screen runs on a single T4 GPU, and latent analysis of Llama-3-8B finds a consistent refusal direction. Preliminary: all GCG attacks detected (N > 350), 97.1% robustness to fluent jailbreaks, 98.86% pass rate on benign prompts.",g:["Llama-3-8B","DistilGPT2","XAI","Adversarial Defense"],c:"",l:""},
+{k:"act",t:"The Adversarial Circuit: Prompt Injection in Agentic RAG",s:"Active research",tm:"Started: add month/year · Ongoing",d:"A glass-box interpretability study that tracks hidden-state trajectories across transformer layers during retrieval, tool use and multi-step reasoning, to explain hallucination, reasoning degradation and indirect prompt injection.",g:["PCA","UMAP","Tuned Lens","Logit Lens","LangChain"],c:"",l:""}];
+const P=[
+{t:"AI Gateway: Secured and Observable Entry Point for RAG and Receipt Understanding",y:"FastAPI · Docker · Prometheus",tm:"Started: add month/year · Deployed on Render",d:"An API gateway in front of a FAISS document Q&A service and an OCR plus LayoutLMv3 receipt extractor, with API-key auth, token-bucket rate limiting, retries and timeouts. A rule-based prompt-injection filter scores questions and retrieved passages: on 40 attacks and 40 benign queries it blocked 55% of attacks (75% blocked or flagged) at a 5% false-block rate. Includes Prometheus metrics, JSON logs with request-ID tracing, and CI/CD with 45 tests.",g:["RAG","FAISS","LayoutLMv3","GitHub Actions"],c:"https://github.com/Yousuf-Hozaifa/ai-gateway",l:"https://ai-gateway-api-zi9y.onrender.com/dashboard"},
+{t:"Enterprise RAG Chatbot Platform",y:"Gemini · FAISS · Gradio",tm:"Started: add month/year · 11 commits",d:"Chat with private PDF documentation using local FAISS vector search and Google Gemini. Uses sliding-window chunking (800 characters, 150 overlap), all-MiniLM-L6-v2 embeddings, conversation memory, and a two-layer guardrail: a vector-distance threshold that rejects out-of-scope questions before any API call, plus strict context-only prompting.",g:["Python","Sentence-Transformers","FAISS","Gemini","Gradio"],c:"https://github.com/Yousuf-Hozaifa/mysoft_rag_chatbot",l:""},
+{t:"LLM Chatbot with LoRA/QLoRA Fine-Tuning",y:"FastAPI · Ollama · Qwen2.5-1.5B",tm:"Started: add month/year",d:"A fine-tunable chatbot built for consumer hardware (8 GB RAM, no GPU). Training runs on Kaggle's free T4 with QLoRA, adapters are merged and quantized to GGUF, and a CPU-only FastAPI service serves the model through Ollama with multi-turn memory, health checks, Docker Compose and pytest tests.",g:["PEFT","QLoRA","Qwen2.5","Ollama","Docker"],c:"https://github.com/Yousuf-Hozaifa/llm-chatbot-finetuning",l:""},
+{t:"AI Lead Handler: LLM Agent for Lead Classification",y:"LLaMA 3.1 · Groq · n8n",tm:"Started: add month/year",d:"An agent workflow that classifies inbound leads as Sales, Support or Spam, extracts name, company, requirement, email and phone, and writes a personalized reply. Exposed as a JSON REST API with Swagger docs and a browser form, containerized for Hugging Face Spaces.",g:["AI Agents","REST API","Docker","Hugging Face Spaces"],c:"https://github.com/Yousuf-Hozaifa/AI_Agent_Workflow_Automation_with_n8n_and_LLM",l:""}];
+const S={"AI and ML frameworks":"TensorFlow, PyTorch, Scikit-learn, LangChain","AI security and LLMs":"Latent space analysis, adversarial defense (GCG, AutoDAN), prompt engineering, LLaMA-3, DistilGPT2","RAG and document AI":"RAG, FAISS, Sentence-Transformers, OCR, LayoutLMv3","Machine learning":"Federated learning (FedAvg), ViT, SAM, Stable Diffusion","Backend and APIs":"FastAPI, REST APIs, Swagger, API-key authentication, rate limiting","Data science":"NumPy, Pandas, Matplotlib","Programming":"Python, C++, SQL, LaTeX","Tools and DevOps":"Git, GitHub Actions, Docker, Prometheus, GHCR, Render, Hugging Face Spaces, Colab, Jupyter, Linux"};
+const $=s=>document.querySelector(s);
+const tg=a=>'<div class="tags">'+a.map(x=>'<span>'+x+'</span>').join('')+'</div>';
+const lk=(c,l)=>`<div class="links">${c?`<a href="${c}" target="_blank" rel="noopener">Code on GitHub ↗</a>`:`<span>GitHub link: add later</span>`}${l?`<a href="${l}" target="_blank" rel="noopener">Live demo ↗</a>`:`<span>Live demo: add later</span>`}</div>`;
+function rr(f){$('#rg').innerHTML=R.filter(r=>f=='all'||r.k==f).map(r=>`<article class="card"><span class="pill ${r.k}">${r.s}</span><p class="tm">${r.tm}</p><h3>${r.t}</h3><p>${r.d}</p>${tg(r.g)}${lk(r.c,r.l)}</article>`).join('')}
+rr('all');
+$('#rf').onclick=e=>{const b=e.target.closest('button');if(!b)return;document.querySelectorAll('#rf button').forEach(x=>x.classList.toggle('on',x==b));rr(b.dataset.f)};
+$('#pg').innerHTML=P.map(p=>`<article class="card"><p class="tm">${p.tm}</p><h3>${p.t}</h3><p class="meta">${p.y}</p><p>${p.d}</p>${tg(p.g)}${lk(p.c,p.l)}</article>`).join('');
+$('#sg').innerHTML=Object.entries(S).map(([k,v])=>`<div><h4>${k}</h4><p>${v}</p></div>`).join('');
+const m="Large Language Models ◆ Explainable AI ◆ Federated Learning ◆ Production ML ◆ ";$('#mq').textContent=m.repeat(6);
+const W=["LLM security","Explainable AI","Federated learning","Agentic RAG","Production ML"];let wi=0,ci=0,del=false;const t=$('#typed');
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches){(function tick(){const w=W[wi];ci+=del?-1:1;t.textContent=w.slice(0,ci);let d=del?35:70;if(!del&&ci==w.length){del=true;d=1400}else if(del&&ci==0){del=false;wi=(wi+1)%W.length;d=300}setTimeout(tick,d)})()}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.08});
+document.querySelectorAll('.rv').forEach(x=>io.observe(x));
+const ls=[...document.querySelectorAll('nav a.l')],ss=ls.map(a=>document.querySelector(a.getAttribute('href')));
+addEventListener('scroll',()=>{let i=0;ss.forEach((s,j)=>{if(s.getBoundingClientRect().top<140)i=j});ls.forEach((a,j)=>a.classList.toggle('on',j==i))},{passive:true});
+$('#cp').onclick=async e=>{try{await navigator.clipboard.writeText('mdyousufhozaifa@gmail.com');e.target.textContent='Copied'}catch(x){e.target.textContent='Press Ctrl+C on the email above'}setTimeout(()=>e.target.textContent='Copy email',2000)};
+</script>
+</body>
+</html>
